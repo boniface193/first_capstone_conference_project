@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
   font-family: "Lato", "Poppins", sans-serif;
@@ -9,4 +9,215 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
+}
+
+ul>li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: inherit;
+}
+
+.outlined-btn {
+  border: 5px solid #ec5242;
+  padding: 14px;
+  color: #ec5242;
+}
+
+ul>li a:focus {
+  color: #ec5242;
+}
+
+.text-orange {
+  color: #ec5242;
+}
+
+.sharing-text {
+  font-size: 35px;
+}
+
+.bg-image {
+  background-image: url('../images/bg-image.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+.bg-image-white {
+  background-color: #F4F4F4;
+  opacity: 0.9;
+}
+
+.height-100 {
+  height: 90vh;
+}
+
+.big-title {
+  font-weight: 900;
+  font-size: 80px;
+  max-width: 70%;
+  background-color: #F71604;
+  background: url('../images/scale-water-color-palette-brushes-cutter-orange-backdrop_23-2148050659.jpg');
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-position: top center;
+}
+
+.big-title-about {
+  font-weight: 900;
+  font-size: 65px;
+  max-width: 55%;
+  color: #F71604;
+}
+
+.white-outlined-card {
+  border: 3px solid #fff;
+  max-width: 530px;
+  margin: 25px 0;
+}
+
+.event-time {
+  font-weight: 900;
+  color: #575757;
+}
+
+.fw-bold-x {
+  font-weight: 700;
+}
+
+.small-title {
+  font-weight: 600;
+  font-size: 23px;
+  color: #575757;
+}
+
+.underline-bottom {
+  margin: 0 auto;
+  border-top: 2px solid #ec5242;
+  max-width: 40px;
+}
+
+.card {
+  background-color: #373A41;
+}
+
+img.imagee {
+  width: 48px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.text-underlined {
+  text-decoration: underline;
+  margin: 70px auto;
+}
+
+.small-text {
+  font-size: 15px;
+}
+
+.text-center-x {
+  text-align: center;
+}
+
+.join-btn {
+  background-color: #ec5242;
+  color: #fff;
+  border: none;
+  padding: 35px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.small-text-hr {
+  border-bottom: 1px solid #E5E5E5;
+  max-width: 40px;
+}
+
+.image-url {
+  height: 180px;
+  width: 180px;
+}
+
+.color-text {
+  color: #8D8D8D;
+  margin: auto 20%;
+}
+
+.fa-chevron-right {
+  font-size: 14px;
+  margin: 0 14px;
+  color: #ec5242;
+}
+
+.about {
+  color: #8D8D8D;
+}
+
+@media(max-width: 576px) {
+  .sharing-text {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .height-100 {
+    height: auto;
+  }
+
+  .card-body {
+    padding: 8px 0;
+  }
+
+  .card-body .row .col-3 {
+    padding: 0;
+  }
+
+  .text-center-x {
+    text-align: left;
+  }
+
+  .big-title {
+    font-size: 38px;
+    max-width: 100%;
+  }
+
+  .big-title-about {
+    font-size: 38px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .small-title {
+    font-size: 14px;
+  }
+
+  .image-url {
+    width: 33%;
+    height: 25%;
+  }
+
+  .fw-bold-x {
+    font-weight: 600;
+  }
+
+  .show-more {
+    padding: 30px 20px;
+  }
+
+  .show-more .show-outline {
+    width: 100%;
+    border: 1px solid #8D8D8D;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .fa-chevron-down {
+    color: #F64732;
+    margin-left: 10px;
+
+  }
 }

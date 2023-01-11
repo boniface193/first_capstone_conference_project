@@ -14,15 +14,14 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/style/main.css">
-  <script src="./assets/js/main.js"></script>
   <title>Podcast Summit</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <aside class="bg-dark text-white d-none d-sm-block">
-        <div class="container">
+    <nav id="navLink" class="d-none d-md-block">
+      <aside class="bg-dark text-white">
+        <div class="container-xl">
           <ul class="d-flex justify-content-end py-2 m-0">
             <li class="me-4"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
             <li class="me-4"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -33,18 +32,18 @@
         </div>
       </aside>
 
-      <aside class="bg-white shadow-sm d-none d-sm-block">
-        <div class="container d-flex align-items-center justify-content-between">
+      <aside class="bg-white shadow-sm">
+        <div class="nav-links container-xl d-flex-ex align-items-center justify-content-between z-index-4">
           <a href="index.html">
             <i class="fa-solid fa-podcast fa-3x text-orange"></i>
             <span class="fw-bold fs-4">Podcast Summit</span>
           </a>
-          <ul class="d-flex pt-3 align-items-center">
-            <li class="me-5"><a href="./about.html">About</a></li>
-            <li class="me-5"><a href="#">Program</a></li>
-            <li class="me-5"><a href="#">Join</a></li>
-            <li class="me-5"><a href="#">Sponsor</a></li>
-            <li class="me-5"><a href="#">News</a></li>
+          <ul class="d-flex-ex pt-3 align-items-center ">
+            <li class="me-lg-5 me-3"><a href="./about.html">About</a></li>
+            <li class="me-lg-5 me-3"><a href="#">Program</a></li>
+            <li class="me-lg-5 me-3"><a href="#">Join</a></li>
+            <li class="me-lg-5 me-3"><a href="#">Sponsor</a></li>
+            <li class="me-lg-5 me-3"><a href="#">News</a></li>
             <li class="outlined-btn"><a href="#">Podcast Campaign</a></li>
           </ul>
         </div>
@@ -53,12 +52,15 @@
   </header>
 
   <main class="bg-image">
-    <section class="bg-image-white pb-5">
-      <div class="container p-3 d-sm-none">
-        <i class="fa-solid fa-bars fa-2x"></i>
-      </div>
+    <a href="#" id="openBar" class="d-md-none">
+      <i class="fa-solid fa-bars position-absolute fa-2x z-index-1 p-4"></i>
+    </a>
+    <div class="container-xl d-none p-3 sideBar position-fixed sideBar-bg-color" id="sideBar">
+      <i id="openBar" class="fas fa-close fa-bars-after"></i>
+    </div>
+    <section class="bg-image-white py-5-md">
       <div class="d-flex height-100">
-        <div class="container d-flex align-items-center pt-5">
+        <div class="container-xl d-flex align-items-center pt-5">
           <div>
             <p class="text-orange sharing-text">"Hello! Sharing World"</p>
             <h1 class="big-title">Podcast Global Annual Summit 2023</h1>
@@ -73,195 +75,91 @@
       </div>
     </section>
 
-    <section class="bg-dark justify-content-center d-flex align-items-center pb-4">
+    <section class="bg-dark justify-content-center d-flex align-items-center pb-4 background-image">
       <div class="mt-4">
-        <h3 class="text-center text-white mt-4">Main Program</h3>
-        <div class="underline-bottom"></div>
+        <h3 class="text-center text-white mt-4 opacity-75">Main Program</h3>
+        <div class="underline-bottom opacity-75"></div>
 
-        <div class="row m-2 justify-content-center text-white mt-5">
-          <div class="card col-md-2 rounded-0 p-0">
+        <div class="row m-1 justify-content-center text-white mt-5">
+          <div class="card col-lg-2 rounded-0 p-0 opacity-75">
             <div class="card-body">
               <div class="row text-center-x">
-                <div class="col-2 col-md-12 mb-3"><img src="./assets/images/speech.png" alt="" class="imagee">
+                <div class="col-2 col-lg-12 mb-3"><img src="./assets/images/speech.png" alt="" class="imagee">
                 </div>
-                <div class="col-3 col-md-12 text-orange fw-bold fs-4">Lecture</div>
-                <div class="col-7 col-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
+                <div class="col-3 col-lg-12 text-orange fw-bold fs-4">Lecture</div>
+                <div class="col-7 col-lg-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card col-md-2 rounded-0">
+          <div class="card col-lg-2 rounded-0 opacity-75">
             <div class="card-body">
               <div class="row text-center-x">
-                <div class="col-2 col-md-12 mb-3">
+                <div class="col-2 col-lg-12 mb-3">
                   <i class="fa-solid fa-chalkboard-user fa-2x"></i>
                 </div>
-                <div class="col-3 col-md-12 text-orange fw-bold fs-4">CC Exhibition</div>
-                <div class="col-7 col-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
+                <div class="col-3 col-lg-12 text-orange fw-bold fs-4">CC Exhibition</div>
+                <div class="col-7 col-lg-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card col-md-2 rounded-0">
+          <div class="card col-lg-2 rounded-0 opacity-75">
             <div class="card-body">
               <div class="row text-center-x">
-                <div class="col-2 col-md-12 mb-3">
+                <div class="col-2 col-lg-12 mb-3">
                   <i class="fa-solid fa-comments fa-2x"></i>
                 </div>
-                <div class="col-3 col-md-12 text-orange fw-bold fs-4">Forum</div>
-                <div class="col-7 col-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
+                <div class="col-3 col-lg-12 text-orange fw-bold fs-4">Forum</div>
+                <div class="col-7 col-lg-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card col-md-2 rounded-0">
+          <div class="card col-lg-2 rounded-0 opacity-75">
             <div class="card-body">
               <div class="row text-center-x">
-                <div class="col-2 col-md-12 mb-3">
+                <div class="col-2 col-lg-12 mb-3">
                   <i class="fa-solid fa-chalkboard fa-2x"></i>
                 </div>
-                <div class="col-3 col-md-12 text-orange fw-bold fs-4">Workshop</div>
-                <div class="col-7 col-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
+                <div class="col-3 col-lg-12 text-orange fw-bold fs-4">Workshop</div>
+                <div class="col-7 col-lg-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card col-md-2 rounded-0">
+          <div class="card col-lg-2 rounded-0 opacity-75">
             <div class="card-body">
               <div class="row text-center-x">
-                <div class="col-2 col-md-12 mb-3">
+                <div class="col-2 col-lg-12 mb-3">
                   <i class="fa-solid fa-dharmachakra fa-2x"></i>
                 </div>
-                <div class="col-3 col-md-12 text-orange fw-bold fs-4">CC Ignite</div>
-                <div class="col-7 col-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
+                <div class="col-3 col-lg-12 text-orange fw-bold fs-4">CC Ignite</div>
+                <div class="col-7 col-lg-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id?
                 </div>
               </div>
             </div>
           </div>
+
         </div>
-        <div class="text-underlined text-white text-center d-none d-sm-block">SEE THE WHOLE PROGRAM</div>
+        <div class="text-underlined text-white text-center d-none d-sm-block opacity-75">SEE THE WHOLE PROGRAM</div>
         <div class="d-flex justify-content-center my-4 d-sm-none">
           <button class="join-btn mx-5">Join CC Global Summit 2023</button>
         </div>
       </div>
     </section>
 
-    <section class="container">
+    <section class="container-xl">
       <div class="mt-5">
         <h3 class="text-center mt-4">featured Speakers</h3>
         <div class="underline-bottom"></div>
 
-        <div class="row mt-5">
-          <div class="col-sm-6 mb-5">
-            <div class="row">
-              <div class="col-sm-4 col-4 image-url">
-                <img src="./assets/images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" width="100%"
-                  height="100%" alt="">
-              </div>
-              <div class="col-sm-8 col-8">
-                <h3 class="fw-bold-x">Yoachi Davis</h3>
-                <p class="small-text text-orange m-0">Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Optio,
-                  nemo!
-                </p>
-                <div class="small-text-hr my-2"></div>
-                <p class="small-text m-0">
-                  Lorem ipsum dolor, sit amet consec tetur adipi sicing elit. Perfe rendis, distin ctio.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 mb-5">
-            <div class="row">
-              <div class="col-sm-4 col-4 image-url">
-                <img src="./assets/images/shipman-northcutt-sgZX15Da8YE-unsplash.jpg" width="100%" height="100%" alt="">
-              </div>
-              <div class="col-sm-8 col-8">
-                <h3 class="fw-bold-x">Yoachi Davis</h3>
-                <p class="small-text text-orange m-0">Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Optio,
-                  nemo!
-                </p>
-                <div class="small-text-hr my-2"></div>
-                <p class="small-text m-0">
-                  Lorem ipsum dolor, sit amet consec tetur adipi sicing elit. Perfe rendis, distin ctio.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 mb-5">
-            <div class="row">
-              <div class="col-sm-4 col-4 image-url">
-                <img src="./assets/images/icons8-team-FcLyt7lW5wg-unsplash.jpg" width="100%" height="100%" alt="">
-              </div>
-              <div class="col-sm-8 col-8">
-                <h3 class="fw-bold-x">Yoachi Davis</h3>
-                <p class="small-text text-orange m-0">Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Optio,
-                  nemo!
-                </p>
-                <div class="small-text-hr my-2"></div>
-                <p class="small-text m-0">
-                  Lorem ipsum dolor, sit amet consec tetur adipi sicing elit. Perfe rendis, distin ctio.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 mb-5">
-            <div class="row">
-              <div class="col-sm-4 col-4 image-url">
-                <img src="./assets/images/m-brauer-W49xnqoy6oc-unsplash.jpg" width="100%" height="100%" alt="">
-              </div>
-              <div class="col-sm-8 col-8">
-                <h3 class="fw-bold-x">Yoachi Davis</h3>
-                <p class="small-text text-orange m-0">Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Optio,
-                  nemo!
-                </p>
-                <div class="small-text-hr my-2"></div>
-                <p class="small-text m-0">
-                  Lorem ipsum dolor, sit amet consec tetur adipi sicing elit. Perfe rendis, distin ctio.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 mb-5">
-            <div class="row">
-              <div class="col-sm-4 col-4 image-url">
-                <img src="./assets/images/m-brauer-yEYmnaFuYVM-unsplash.jpg" width="100%" height="100%" alt="">
-              </div>
-              <div class="col-sm-8 col-8">
-                <h3 class="fw-bold-x">Yoachi Davis</h3>
-                <p class="small-text text-orange m-0">Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Optio,
-                  nemo!
-                </p>
-                <div class="small-text-hr my-2"></div>
-                <p class="small-text m-0">
-                  Lorem ipsum dolor, sit amet consec tetur adipi sicing elit. Perfe rendis, distin ctio.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 mb-5">
-            <div class="row">
-              <div class="col-sm-4 col-4 image-url">
-                <img src="./assets/images/ph-m-duy-quang-QGr6H7pri-Q-unsplash.jpg" width="100%" height="100%" alt="">
-              </div>
-              <div class="col-sm-8 col-8">
-                <h3 class="fw-bold-x">Yoachi Davis</h3>
-                <p class="small-text text-orange m-0">Lorem ipsum dolor sit amet conse ctetur, adipi sicing elit. Optio,
-                  nemo!
-                </p>
-                <div class="small-text-hr my-2"></div>
-                <p class="small-text m-0">
-                  Lorem ipsum dolor, sit amet consec tetur adipi sicing elit. Perfe rendis, distin ctio.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="show-more d-sm-none">
+        <div class="row my-5 py-5 allSpeaks">
+          <div class="show-more d-md-none">
             <a href="#" class="show-outline d-flex justify-content-center align-items-center">
               <span>More</span>
               <i class="fa-sharp fa-solid fa-chevron-down"></i>
@@ -272,8 +170,8 @@
       </div>
     </section>
 
-    <section class="bg-dark d-flex align-items-center py-4 d-none d-sm-block">
-      <div class="mt-4 container">
+    <section class="bg-dark d-flex align-items-center py-4 d-none d-md-block">
+      <div class="mt-4 container-xl">
         <h3 class="text-center mt-4 color-text">Partner</h3>
         <div class="underline-bottom"></div>
 
@@ -290,16 +188,16 @@
       </div>
     </section>
 
-    <footer class="container py-5 d-none d-md-block">
+    <footer class="container-xl py-5 d-none d-md-block">
       <div class="row align-items-center">
-        <div class="col-sm-3">
+        <div class="col-sm-4 col-3">
           <a href="index.html">
             <i class="fa-solid fa-podcast fa-3x text-orange"></i>
             <span class="fw-bold fs-4">Podcast Summit</span>
           </a>
         </div>
-        <div class="col-sm-9">
-          <p class="fw-medium">2015 Creative Commons Korea. Some Rights Reserved.
+        <div class="col-sm-8 col-9">
+          <p class="fw-bold">2015 Creative Commons Korea. Some Rights Reserved.
           </p>
           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique maiores quidem aperiam
             excepturi ex quibusdam vero minus voluptate rerum!</span>
@@ -307,7 +205,7 @@
       </div>
     </footer>
   </main>
-
+  <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>

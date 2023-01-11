@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-ul>li {
+ul > li {
   list-style-type: none;
 }
 
@@ -31,7 +31,7 @@ a {
   color: #ec5242;
 }
 
-ul>li a:focus {
+ul > li a:focus {
   color: #ec5242;
 }
 
@@ -71,7 +71,7 @@ ul>li a:focus {
   font-size: 80px;
   max-width: 70%;
   background-color: #f71604;
-  background: url('../images/scale-water-color-palette-brushes-cutter-orange-backdrop_23-2148050659.jpg');
+  background-image: url('../images/scale-water-color-palette-brushes-cutter-orange-backdrop_23-2148050659.jpg');
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-position: top center;
@@ -222,11 +222,6 @@ img.imagee {
   margin: 16px;
 }
 
-.image-url img {
-  width: "100%";
-  height: "100%";
-}
-
 .image-url-fx {
   max-height: 240px;
   overflow: hidden;
@@ -243,9 +238,6 @@ img.imagee {
 .chess_board img {
   width: 100%;
   height: 100%;
-}
-
-.chess_board img {
   filter: invert(1);
   opacity: 0.2;
 }
@@ -283,7 +275,6 @@ img.imagee {
 }
 
 @media (max-width: 576px) {
-
   .sharing-text {
     font-size: 20px;
     margin: 0;
@@ -378,16 +369,15 @@ img.imagee {
     }
   }
 
-  .sideBar>.fa-bars-after {
+  .sideBar > .fa-bars-after {
     color: #fff;
     font-size: 28px;
     display: flex;
     justify-content: end;
     padding: 25px;
-  
   }
 
-  .sideBar>.fa-bars:hover {
+  .sideBar > .fa-bars:hover {
     cursor: pointer;
   }
 

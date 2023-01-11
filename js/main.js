@@ -1,10 +1,10 @@
-import sideBarFun from './sidebar.js'
-import featured_Speaker from './featured.js'
+import sideBarFun from './sidebar.js';
+import featuredSpeaker from './featured.js';
 
-const allSpeaks = document.querySelector('.allSpeaks')
-sideBarFun()
+const allSpeaks = document.querySelector('.allSpeaks');
+sideBarFun();
 
-featured_Speaker.forEach(i => {
+featuredSpeaker.forEach((i) => {
   allSpeaks.innerHTML += `
     <div class="col-sm-6 mb-5">
       <div class="row">
@@ -28,5 +28,5 @@ featured_Speaker.forEach(i => {
         </div>
       </div>
     </div>
-  `
-})
+  `;
+});

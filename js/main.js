@@ -10,7 +10,7 @@ featuredSpeaker.forEach((i) => {
       <div class="row">
         <div class="col-lg-4 col-5">
           <div class="chess_board">
-            <img src="${i.chessboard}" alt="">
+            <img src="${i.chessboard}" alt="chessbox image">
           </div>
           <div class="image-url">
             <img src="${i.img}" width="100%" alt="Speakers Image">

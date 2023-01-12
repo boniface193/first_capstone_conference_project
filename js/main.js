@@ -13,10 +13,10 @@ featuredSpeaker.forEach((i) => {
             <img src="${i.chessboard}" alt="">
           </div>
           <div class="image-url">
-            <img src="${i.img}" width="100%" alt="">
+            <img src="${i.img}" width="100%" alt="Speakers Image">
           </div>
         </div>
-        <div class="col-lg-8 col-7">
+        <div class="col-lg-8 col-7 pt-3">
           <h3 class="fw-bold-x">${i.fullname}</h3>
           <p class="small-text text-orange m-0">
             ${i.text}

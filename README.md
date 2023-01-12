@@ -33,6 +33,10 @@
 
 This is a Podcast hosting summit website, These website feature pro podcast speakers, interactive sessions with the speakers, networking opportunities, and the chance to register for an exhibition worldwide.
 
+Original design idea by Cindy Shin in Behance.
+
+ - [Video Link](https://www.loom.com/share/f5ea2b523519425f928cee630eab6e8c)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>

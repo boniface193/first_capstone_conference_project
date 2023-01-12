@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-ul>li {
+ul > li {
   list-style-type: none;
 }
 
@@ -31,7 +31,7 @@ a {
   color: #ec5242;
 }
 
-ul>li a:focus {
+ul > li a:focus {
   color: #ec5242;
 }
 
@@ -71,7 +71,7 @@ ul>li a:focus {
   font-size: 80px;
   max-width: 70%;
   background-color: #f71604;
-  background: url('../images/scale-water-color-palette-brushes-cutter-orange-backdrop_23-2148050659.jpg');
+  background-image: url('../images/scale-water-color-palette-brushes-cutter-orange-backdrop_23-2148050659.jpg');
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-position: top center;
@@ -119,6 +119,7 @@ ul>li a:focus {
 
 .fw-bold-x {
   font-weight: 700;
+  font-size: 22px;
 }
 
 .small-title {
@@ -222,11 +223,6 @@ img.imagee {
   margin: 16px;
 }
 
-.image-url img {
-  width: "100%";
-  height: "100%";
-}
-
 .image-url-fx {
   max-height: 240px;
   overflow: hidden;
@@ -243,16 +239,14 @@ img.imagee {
 .chess_board img {
   width: 100%;
   height: 100%;
-}
-
-.chess_board img {
   filter: invert(1);
   opacity: 0.2;
 }
 
 .color-text {
   color: #8d8d8d;
-  margin: auto 20%;
+
+  /* margin: auto 20%; */
 }
 
 .red {
@@ -283,7 +277,6 @@ img.imagee {
 }
 
 @media (max-width: 576px) {
-
   .sharing-text {
     font-size: 20px;
     margin: 0;
@@ -310,12 +303,12 @@ img.imagee {
   }
 
   .big-title {
-    font-size: 38px;
+    font-size: 45px !important;
     max-width: 100%;
   }
 
   .big-title-about {
-    font-size: 38px;
+    font-size: 38px !important;
     max-width: 100%;
     text-align: center;
   }
@@ -331,6 +324,7 @@ img.imagee {
 
   .fw-bold-x {
     font-weight: 600;
+    font-size: 18px;
   }
 }
 
@@ -378,16 +372,15 @@ img.imagee {
     }
   }
 
-  .sideBar>.fa-bars-after {
+  .sideBar > .fa-bars-after {
     color: #fff;
     font-size: 28px;
     display: flex;
     justify-content: end;
     padding: 25px;
-  
   }
 
-  .sideBar>.fa-bars:hover {
+  .sideBar > .fa-bars:hover {
     cursor: pointer;
   }
 
@@ -419,9 +412,17 @@ img.imagee {
 }
 
 @media (max-width: 991px) {
+  .mb-xs-3 {
+    margin-bottom: 14px;
+  }
+
+  .small-text {
+    font-size: 13px;
+  }
+
   .big-title {
     font-weight: 900;
-    font-size: 80px;
+    font-size: 70px;
     max-width: 100%;
   }
 

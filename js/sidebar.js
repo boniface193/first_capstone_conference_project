@@ -1,10 +1,10 @@
 function sideBarFun() {
-  const openBar = document.querySelectorAll('#openBar')
+  const openBar = document.querySelectorAll('#openBar');
   const sideBar = document.querySelector('#sideBar');
   const navLink = document.querySelector('#navLink');
   const navLinkLi = navLink.querySelectorAll(':scope > aside > div');
   function openAndCloseBar() {
-    navLink.classList.toggle('d-none')
+    navLink.classList.toggle('d-none');
     sideBar.classList.toggle('d-none');
   }
 
